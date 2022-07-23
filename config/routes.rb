@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'shippers/new'
+  get 'shippers/create'
+  get 'shippers/index'
+  get 'shippers/edit'
+  get 'shippers/update'
+  get 'shippers/destroy'
   get 'shipments/new'
   get 'shipments/create'
   get 'shipments/index'
