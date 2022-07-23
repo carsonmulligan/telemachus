@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_23_172700) do
+ActiveRecord::Schema.define(version: 2022_07_23_172848) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,22 @@ ActiveRecord::Schema.define(version: 2022_07_23_172700) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_consignees_on_user_id"
+  end
+
+  create_table "shipments", force: :cascade do |t|
+    t.string "origin"
+    t.string "destination"
+    t.string "transport_mode"
+    t.string "commodity"
+    t.integer "reference_number"
+    t.bigint "shipper_id", null: false
+    t.bigint "consignee_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["consignee_id"], name: "index_shipments_on_consignee_id"
+    t.index ["shipper_id"], name: "index_shipments_on_shipper_id"
+    t.index ["user_id"], name: "index_shipments_on_user_id"
   end
 
   create_table "shippers", force: :cascade do |t|
@@ -58,5 +74,8 @@ ActiveRecord::Schema.define(version: 2022_07_23_172700) do
   end
 
   add_foreign_key "consignees", "users"
+  add_foreign_key "shipments", "consignees"
+  add_foreign_key "shipments", "shippers"
+  add_foreign_key "shipments", "users"
   add_foreign_key "shippers", "users"
 end
