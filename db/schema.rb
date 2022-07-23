@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_23_172531) do
+ActiveRecord::Schema.define(version: 2022_07_23_172700) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "consignees", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "poc_name"
+    t.string "poc_email"
+    t.string "poc_phone"
+    t.string "office_location"
+    t.string "shipper_consignee_relationships"
+    t.string "payment_type"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_consignees_on_user_id"
+  end
 
   create_table "shippers", force: :cascade do |t|
     t.string "name"
@@ -42,5 +57,6 @@ ActiveRecord::Schema.define(version: 2022_07_23_172531) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "consignees", "users"
   add_foreign_key "shippers", "users"
 end
