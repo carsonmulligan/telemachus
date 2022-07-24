@@ -4,7 +4,13 @@ class ConsigneesController < ApplicationController
   end
 
   def create
+    @consignee = Consignee.new(consignee_params)
 
+    if @consignee.save
+      redirect_to @consignee, notice: 'Consignee successfully created'
+    else
+      render :new
+    end
   end
 
   def index
@@ -21,5 +27,11 @@ class ConsigneesController < ApplicationController
   end
 
   def show
+  end
+
+  private
+
+  def consignee_params
+    params.require(:consignee).permit(:name, :user_id)
   end
 end
