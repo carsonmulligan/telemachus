@@ -32,6 +32,6 @@ class ConsigneesController < ApplicationController
   private
 
   def consignee_params
-    params.require(:consignee).permit(:name, :user_id)
+    params.require(:consignee).permit(:name, :poc_email)
   end
 end
