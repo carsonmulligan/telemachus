@@ -1,5 +1,7 @@
 class ShippersController < ApplicationController
   def new
+    @shipper = Shipper.new
+    @shipper.save
   end
 
   def create
