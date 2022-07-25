@@ -33,8 +33,38 @@ shipper1 = Shipper.create(name: 'Super Micro', address: '728 Rock Ave. San Jose 
                           payment_type: 'Etherium', user_id: user1.id)
 
 # Create Shipments
-shipment1 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment: HS 8471.90.0000', reference_number: 4755, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
-shipment2 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment: HS 8471.90.0000', reference_number: 4756, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
-shipment3 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment: HS 8471.90.0000', reference_number: 4757, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
-shipment4 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment: HS 8471.90.0000', reference_number: 4758, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
-shipment5 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment: HS 8471.90.0000', reference_number: 4759, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment1 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4755, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment2 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4756, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment3 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4757, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment4 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4758, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment5 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4759, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+
+shipment6 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4760, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment7 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4761, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment8 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4762, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment9 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4763, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment10 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4764, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+
+shipment11 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4765, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment12 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4766, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment13 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4767, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment14 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4768, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment15 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4769, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+
+shipment16 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4770, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment17 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4771, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment18 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4772, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment19 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4773, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment20 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4774, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+
+shipment21 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4775, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment22 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4776, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment23 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4777, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment24 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4778, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment25 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4779, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+
+shipment26 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4780, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment27 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4781, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment28 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4782, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment29 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4783, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment30 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment', reference_number: 4784, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
