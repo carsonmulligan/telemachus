@@ -10,6 +10,7 @@ class ShippersController < ApplicationController
 
   def create
     @shipper = Shipper.new(shipper_params)
+    @shipper.user = current_user
 
     if @shipper.save
       redirect_to @shipper, notice: 'Shipper successfully created.'
@@ -19,6 +20,7 @@ class ShippersController < ApplicationController
   end
 
   def show
+    @shipper = Shipper.find(params[:id])
   end
 
   def edit
@@ -33,6 +35,7 @@ class ShippersController < ApplicationController
   private
 
   def shipper_params
-    params.require(:shipper).permit(:name, :user_id)
+    params.require(:shipper).permit(:name, :address, :poc_name, :poc_email, :poc_phone, :office_location,
+                                    :shipper_consignee_relationships, :payment_type, :user_id)
   end
 end
