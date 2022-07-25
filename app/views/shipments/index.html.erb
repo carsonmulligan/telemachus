@@ -1,21 +1,4 @@
 <h1>Shipments#index</h1>
 <p>Find me in app/views/shipments/index.html.erb</p>
 
-
-<% @shipments.each do |shipment| %>
-  <%= shipment.reference_number %>
-<% end %>
-
-
-         <tr>
-          <% @shipments.each do |shipment| %>
-              <td><%= shipment.reference_number %></td>
-              <td><%= shipment.shipper.name %></td>
-              <td><%= shipment.consignee.name %></td>
-              <td><%= shipment.origin %></td>
-              <td><%= shipment.destination %></td>
-              <td>8/11/22</td>
-              <td>8/14/22</td>
-              <td><%= shipment.commodity %></td>
-            <% end %>
-            </tr>
+<%= render 'shared/dashboard' %>
