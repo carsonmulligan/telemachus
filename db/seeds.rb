@@ -33,8 +33,8 @@ shipper1 = Shipper.create(name: 'Super Micro', address: '728 Rock Ave. San Jose 
                           payment_type: 'Etherium', user_id: user1.id)
 
 # Create Shipments
-shipment1 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Copmuter Equipment: HS 8471.90.0000', reference_number: 4755, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
-shipment2 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Copmuter Equipment: HS 8471.90.0000', reference_number: 4756, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
-shipment3 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Copmuter Equipment: HS 8471.90.0000', reference_number: 4757, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
-shipment4 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Copmuter Equipment: HS 8471.90.0000', reference_number: 4758, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
-shipment5 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Copmuter Equipment: HS 8471.90.0000', reference_number: 4759, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment1 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment: HS 8471.90.0000', reference_number: 4755, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment2 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment: HS 8471.90.0000', reference_number: 4756, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment3 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment: HS 8471.90.0000', reference_number: 4757, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment4 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment: HS 8471.90.0000', reference_number: 4758, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)
+shipment5 = Shipment.create(origin: 'SFO', destination: 'FRA', transport_mode: 'Air', commodity: 'Computer Equipment: HS 8471.90.0000', reference_number: 4759, consignee_id: consignee1.id, shipper_id: shipper1.id, user_id: user1.id)

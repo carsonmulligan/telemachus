@@ -1,0 +1,12 @@
+  <tr>
+          <% @shipments.each do |shipment| %>
+              <td><%= @shipment.id %></td>
+              <td><%= @shipment.shipper.name %></td>
+              <td><%= @shipment.consignee.name %></td>
+              <td><%= @shipment.origin %></td>
+              <td><%= @shipment.destination %></td>
+              <td>8/11/22</td>
+              <td>8/14/22</td>
+              <td><%= @shipment.commodity_type %></td>
+            <% end %>
+            </tr>
