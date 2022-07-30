@@ -11,7 +11,6 @@ gem "simple_form", github: "heartcombo/simple_form"
 
 gem 'country_select', '~> 8.0'
 
-gem 'mongoid'
 
 
 gem 'devise'
